@@ -3,6 +3,7 @@
 - Update several dependencies
 - Standalone Demo
 - Standalone Google Sign-in Button Directive
+- Moved to another package
 
 # 2.3.0
 - Update to Angular 18

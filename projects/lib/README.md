@@ -1,32 +1,33 @@
 # Angular Social Login
 
-> Use [Discussions](https://github.com/abacritt/angularx-social-login/discussions) for questions.
+> Use [Discussions](https://github.com/WissamAbbara/angularx-social-login/discussions) for questions.
 
 Social login and authentication module for Angular 19. Supports authentication with **Google**, **Facebook**, **Amazon**, **Microsoft**, and **VK** out of the box. Can be extended to other
 providers also.
+This package is forked and upgraded from @abacritt/angularx-social-login
 
 Check out the [demo](https://abacritt.github.io/angularx-social-login/).
 
 ### Compatibility Matrix
 
-| Library Version                       | Angular Version |
-|---------------------------------------|-----------------|
-| @abacritt/angularx-social-login:2.4.X | 19              |
-| @abacritt/angularx-social-login:2.3.X | 18              |
-| @abacritt/angularx-social-login:2.2.X | 17              |
-| @abacritt/angularx-social-login:2.1.X | 16, 17          |
-| @abacritt/angularx-social-login:2.0.X | 15, 16          |
-| @abacritt/angularx-social-login:1     | 13, 14, 15      |
-| angularx-social-login:4               | 12, 13          |
-| angularx-social-login:3               | 9, 10, 11       |
-| angularx-social-login:2               | 5, 6, 7, 8      |
+| Library Version                        | Angular Version |
+|----------------------------------------|-----------------|
+| @abuelwiss/angularx-social-login:2.4.X | 19              |
+| @abacritt/angularx-social-login:2.3.X  | 18              |
+| @abacritt/angularx-social-login:2.2.X  | 17              |
+| @abacritt/angularx-social-login:2.1.X  | 16, 17          |
+| @abacritt/angularx-social-login:2.0.X  | 15, 16          |
+| @abacritt/angularx-social-login:1      | 13, 14, 15      |
+| angularx-social-login:4                | 12, 13          |
+| angularx-social-login:3                | 9, 10, 11       |
+| angularx-social-login:2                | 5, 6, 7, 8      |
 
 ## Getting started
 
 ### Install via npm
 
 ```sh
-npm i @abacritt/angularx-social-login
+npm i @abuelwiss/angularx-social-login
 ```
 
 ### Import the module
@@ -34,11 +35,11 @@ npm i @abacritt/angularx-social-login
 In your `AppConfig`, import the `SocialLoginModule`
 
 ```javascript
-import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig } from '@abuelwiss/angularx-social-login';
 import {
   GoogleLoginProvider,
   FacebookLoginProvider
-} from '@abacritt/angularx-social-login';
+} from '@abuelwiss/angularx-social-login';
 
 @NgModule({
   declarations: [
@@ -81,8 +82,8 @@ export class AppConfig { }
 
 ```javascript
 
-import { SocialAuthService } from "@abacritt/angularx-social-login";
-import { FacebookLoginProvider } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abuelwiss/angularx-social-login";
+import { FacebookLoginProvider } from "@abuelwiss/angularx-social-login";
 
 @Component({
   selector: 'app-demo',
@@ -108,8 +109,8 @@ export class DemoComponent {
 
 ```javascript
 
-import { SocialAuthService } from "@abacritt/angularx-social-login";
-import { VKLoginProvider } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abuelwiss/angularx-social-login";
+import { VKLoginProvider } from "@abuelwiss/angularx-social-login";
 
 @Component({
   selector: 'app-demo',
@@ -175,8 +176,8 @@ Once a user is logged in manual refresh token method can be triggered
 
 ```javascript
 
-import { SocialAuthService } from "@abacritt/angularx-social-login";
-import { GoogleLoginProvider } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abuelwiss/angularx-social-login";
+import { GoogleLoginProvider } from "@abuelwiss/angularx-social-login";
 
 @Component({
   selector: 'app-demo',
@@ -201,8 +202,8 @@ Once a user is logged in an access token can be requested for the scopes we spec
 ```typescript
 
 import { HttpClient } from '@angular/common/http';
-import { SocialAuthService } from "@abacritt/angularx-social-login";
-import { GoogleLoginProvider } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abuelwiss/angularx-social-login";
+import { GoogleLoginProvider } from "@abuelwiss/angularx-social-login";
 
 @Component({
   selector: 'app-demo',
@@ -240,8 +241,8 @@ Once a user is logged in and an access token was obtained, the access token can 
 
 ```typescript
 
-import { SocialAuthService } from "@abacritt/angularx-social-login";
-import { GoogleLoginProvider } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abuelwiss/angularx-social-login";
+import { GoogleLoginProvider } from "@abuelwiss/angularx-social-login";
 
 @Component({
   selector: 'app-demo',
@@ -264,8 +265,8 @@ export class DemoComponent implements OnInit {
 You are notified when user logs in or logs out. You receive a `SocialUser` object when the user logs in and a `null` when the user logs out. `SocialUser` object contains basic user information such as name, email, photo URL, etc. along with the `auth_token`. You can communicate the `auth_token` to your server to authenticate the user in server and make API calls from server.
 
 ```javascript
-import { SocialAuthService } from "@abacritt/angularx-social-login";
-import { SocialUser } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abuelwiss/angularx-social-login";
+import { SocialUser } from "@abuelwiss/angularx-social-login";
 
 @Component({
   selector: 'app-demo',
